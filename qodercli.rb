@@ -5,13 +5,13 @@
 class Qodercli < Formula
   desc "Qoder AI CLI tool"
   homepage "https://qoder.com"
-  version "0.0.16"
+  version "0.0.17"
   license "Commercial"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/v0.0.16/qodercli_0.0.16_darwin_amd64.tar.gz"
-      sha256 "7d02c9eefaca580e4e8c30c452900e63865ce076e6cea755eb0b141787dcc598"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/0.0.17/qodercli_0.0.17_darwin_amd64.tar.gz"
+      sha256 "5280c8ce058ef9c2bb2679263df7b9eb3d159d865404d517a5c96b985ef35a47"
 
       def install
         bin.install "qodercli"
@@ -19,8 +19,8 @@ class Qodercli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/v0.0.16/qodercli_0.0.16_darwin_arm64.tar.gz"
-      sha256 "0a57c04e2414911d6185a8e5174b6c66e2dc10f89aba9a93eaefdbd9ee7847d2"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/0.0.17/qodercli_0.0.17_darwin_arm64.tar.gz"
+      sha256 "46922844dd56d2b0d877cc2b4cd3b95338e98b7c249da7336624f908e9972264"
 
       def install
         bin.install "qodercli"
@@ -31,16 +31,16 @@ class Qodercli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/v0.0.16/qodercli_0.0.16_linux_amd64.tar.gz"
-      sha256 "e551e1120778aa46b2af22b8f4ebe45b4abfe4d68614e307143addca3a4e7f35"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/0.0.17/qodercli_0.0.17_linux_amd64.tar.gz"
+      sha256 "67c3332bad9a7f2d7e6b5f28d384c7579e78f924bfd2d536c3d4055aa12e147b"
       def install
         bin.install "qodercli"
         (bin/".qodercli-install-resource").write "homebrew"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/v0.0.16/qodercli_0.0.16_linux_arm64.tar.gz"
-      sha256 "5ccbffe0cde4818ab4a83210ed575e5b8c492a2b537ab6d24dc11acffa2c88ff"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/0.0.17/qodercli_0.0.17_linux_arm64.tar.gz"
+      sha256 "86ac2095b3427779bdb35295883012e52b7793cd4f7cd9b5ddb60aeeb73352f1"
       def install
         bin.install "qodercli"
         (bin/".qodercli-install-resource").write "homebrew"
