@@ -2,21 +2,22 @@
 cask "qodercli" do
   # 安装后创建源标记 - 用于更新检测
   postflight do
-    # 标记文件应该放在最终的bin目录中，不是临时目录
-    marker_path = "#{HOMEBREW_PREFIX}/bin/.qodercli-install-resource"
-    File.write(marker_path, "homebrew-cask")
-
-    # 测试最终安装的binary，不是临时目录中的
-    system "#{HOMEBREW_PREFIX}/bin/qodercli", "--version"
+    # 标记文件应该放在存储目录中
+    marker = staged_path/'.qodercli-install-resource'
+    File.write(marker, "homebrew-cask")
+    marker.chmod(0644)
 
     # 确保binary有执行权限
-    File.chmod(0755, "#{HOMEBREW_PREFIX}/bin/qodercli")
+    (staged_path/"qodercli").chmod(0755)
+
+    bin_binary = HOMEBREW_PREFIX/"bin"/"qodercli"
+    system bin_binary, "--version"
   end
 
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.0.10-alpha.4"
+  version "0.0.10-alpha.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -27,22 +28,22 @@ cask "qodercli" do
   on_macos do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "98934363851cf101a7dbea348d40297fd441ea902b78000b3fd56e1772cff4be"
+      sha256 "2cdb5db8ca49fec00983cf750bc7af9cb8fd4c4cf130a54ea89f70a7821c27a1"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "05b041bde138403809cb667e4e0ac70b20255687a1c4b4421a74302adeb09c9a"
+      sha256 "2fc63c3c4ef010e2555074c723befad549920ec1aa851e8eaee1967ab6ad8790"
     end
   end
 
   on_linux do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "2b0afa47951466f50017e10a7a7e943ff257252ba7ffbf04766544d1cd862e19"
+      sha256 "e4d3a7b847ce65c0db9761038b27875d1d09f4d8bb1e56e7cb4a2b45e6d18ed6"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "8f6ecf0cf6c3d8ee1961797f0efc4b8f272be760011900dccd65486bb7c4bd78"
+      sha256 "ece916321c5aea15ed7f21e3899e3b756c2096626b64fcb3e7602f3994b650d4"
     end
   end
 
