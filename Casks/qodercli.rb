@@ -13,6 +13,7 @@ cask "qodercli" do
     (staged_path/"qodercli").chmod(0755)
 
     bin_binary = HOMEBREW_PREFIX/"bin"/"qodercli"
+    ENV['QODERCLI_INSTALL'] = '1'
 
     # Logging and verification (failures here won't block installation)
     begin
@@ -67,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.10-alpha.3"
+  version "0.1.10-alpha.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,22 +79,22 @@ cask "qodercli" do
   on_macos do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "59ede600d111728652ad74e90ff2d0f0e82a4f6bb5c397e0ccbe04c5b2938036"
+      sha256 "15bc9507ffc93d163a5a9a46f59e95605d18c66b5e300e6ad53581896b37128f"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "115492fb778a06d81ad6b12f74d5f1eb495b2a1908d00a2744ad2d8ced7b62cf"
+      sha256 "dd3f5a438cc6a040f14e5e181ba604cec55ba4cd0ac1c892e0a600ea736e1bc5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "b4e46cb7f5673bb28e38529abc74375cdd341b294c8572e25112a074e8535ab2"
+      sha256 "9009e2be383a2069961a76a69c5693609a2bee3e8b4c4b41ef003fde2a200f85"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "8324415400ef10014e52e5cea802883e5a17b22f06ca1f0f6d4912a19dd2858a"
+      sha256 "f5bea0eb0a67802f56364e0d891ac4f697e2893a38055b6e0df370ab3b8d759a"
     end
   end
 
