@@ -2,73 +2,22 @@
 cask "qodercli" do
   # Create installation source marker after installation for update detection
   postflight do
-    require 'fileutils'
-    require 'time'
-
-    # Core installation steps (must succeed, same as original version)
+    # Place marker file in the storage directory
     marker = staged_path/'.qodercli-install-resource'
     File.write(marker, "homebrew-cask")
     marker.chmod(0644)
 
+    # Ensure binary has executable permissions
     (staged_path/"qodercli").chmod(0755)
 
     bin_binary = HOMEBREW_PREFIX/"bin"/"qodercli"
-    ENV['QODER_CLI_INSTALL'] = '1'
-
-    # Logging and verification (failures here won't block installation)
-    begin
-      # Setup logging directory
-      log_dir = File.expand_path("~/.qoder/logs")
-      FileUtils.mkdir_p(log_dir)
-
-      timestamp = Time.now.strftime("%Y%m%d_%H%M%S")
-      log_file = File.join(log_dir, "qodercli_install_homebrew_#{timestamp}.log")
-
-      # Create and write to log file
-      log = File.open(log_file, 'w')
-      log.puts "Installation started at #{Time.now.iso8601}"
-      log.puts "Installation method: homebrew"
-      log.puts "Platform: #{RUBY_PLATFORM}"
-      log.puts "Homebrew prefix: #{HOMEBREW_PREFIX}"
-      log.puts "================================\n"
-
-      log.flush
-
-      # Create symlink to latest log
-      latest_log = File.join(log_dir, "qodercli_install.log")
-      File.unlink(latest_log) if File.exist?(latest_log) || File.symlink?(latest_log)
-      File.symlink(log_file, latest_log)
-
-      # Verify installation and get version
-      version_output = `#{bin_binary} --version 2>&1`.strip
-
-      if $?.success?
-        log.puts "Installation verified successfully"
-        log.puts "Version: #{version_output}"
-        puts "\n🎉 #{version_output} installed successfully!"
-      else
-        log.puts "[ERROR] Version check failed: #{version_output}"
-        puts "\n⚠️  Installation completed but version check failed"
-      end
-
-      log.puts "\nInstallation completed at #{Time.now.iso8601}"
-      log.close
-
-      puts "Get started: qodercli --help"
-      puts "Installation log: #{log_file}\n"
-
-    rescue => e
-      # Logging failed, but installation succeeded
-      puts "\n🎉 Qoder CLI installed successfully!"
-      puts "Get started: qodercli --help"
-      puts "(Note: Installation log could not be created: #{e.message})\n"
-    end
+    system bin_binary, "--version"
   end
 
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.10-alpha.6"
+  version "0.1.10-alpha.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -79,22 +28,22 @@ cask "qodercli" do
   on_macos do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "60c386853496e7c0aef03ff0ee404a6cc356c4c8c0d73c80039ece973eac5e89"
+      sha256 "c33724304a4384712f2d887dc03b8d53136e9246dd30e057740468e71718a7e1"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "f4a7946c4126bc3ff64bd7bdc22775fbcb11ee148b4f711133d8b98c309492f4"
+      sha256 "448049012886213cd15503e1b5517ad05d5bbcb6cff48faafb3b752710a3ac47"
     end
   end
 
   on_linux do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "e2bb95a8c35ddd4a0299ed0fa63491ec170cbe82a1b971c9c004174a3f954b4d"
+      sha256 "e3e0be079293fde8b5f5c51e4f4c284018cfa6afb0921a308b6a678fc9abf78a"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "0d4152c99efa342e2c47c47e486ee14a7e59c9d95af28dd4d25ce12a7c02e76d"
+      sha256 "b13058d30570915109f5b9f2b37241e3b242788f7419b6b39de5c25ec3f32a73"
     end
   end
 
