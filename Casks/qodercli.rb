@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.30-alpha.92"
+  version "0.2.30-suffix-aadffasd"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "f6b0e1934c94d02f1b834045c8b8ad88f3efcf9e55211d6ba5919cf20542acb4"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "d1eb3e265aca5ddda43f439da47c7482df72ec803bcd65faa0dca1f1ff4103aa"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "ab8258eff8c2130ef090dfb906d504ecc0d01eae9c316aafe003504770ae8e67"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "a16834643f70812f67abdd4431a77f3c0043bc38faeac9d66e61d601522ffc96"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "95044597074d0601b9a3a07b1d96d2062aaa7972fc48adc635fb12a5c4ce280e"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "22e8ca90c337a06f729d9588dd807acc4abec66d32e3f03a74a76882a4849eb6"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "fdfe56d9a39d230569da8c50512c5a8453e3c87f370ccb421034f02838f91f2c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "75288e97a1316ed69de946fabfcd1cde3d7908bd4dc51de6cb53ea9dad78677e"
     end
   end
 
