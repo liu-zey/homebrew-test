@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.30-alpha.94"
+  version "0.6.0-quest-change-34"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "6add8c17e21865dc2eea325d20f664fc9aa0f8dc74ac9ff8ef712b26b588b5f0"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "0b0d1e6bf83390952de9acdb9f3aafcd390bd117f9c59a72cff7ff0ea60d7140"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "f3971d2b3c0ff1794a9d8733e0c8d6ce5ea9c3cf5facfd5b4a8cc96c79559a43"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "5480fc888123e0d6843d7d445092c95af7c8cc6adbbf471e52a4b4ad03efccf2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "b59a7d8b77ee4802a1a8ad926b775575d986e2b31d91046a01c53ca4b5b3c377"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "91c279215756d914a09175ab20a59c144431f3d2eb21e083cbf27f2a5bedb4e8"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "903bc42a77cf7d46234adb481626c881a725119f881db53308ab61f252173f4c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "c3d5e5ba6eeafa248a9fca0505e1341c100798b69b3534222e3b3fc25091155b"
     end
   end
 
