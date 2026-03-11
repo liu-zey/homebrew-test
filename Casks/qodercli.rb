@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.7.0-quest-change-50"
+  version "0.1.31-alpha.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "b97a124479b0e5bff1deddb8671ffc42b922245be092fa5fd1ab4fb735e22ee3"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "0d59f6f6694cb2f90f1a787ba8d9c498edfa5b7d694ddcec9145bdcd23242da9"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "c992eeb7275bef4a8590c95f42e3c2865c45ec6825076057dfa6f01cb263511c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "b4a5806ec98295ce32321d8e78354cf0a499b6148a04413d5629a6b2f1629688"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "ee52ff13251582bbd2f8183e1b8530a8447d64878e709ae5319fc05f26f8abe4"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "4038bea2238a6fc4133668ddbcfc5e49b5e2c1daa701282d5b65657a7f2e6985"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "ac15ea132b86c9fd86f0c6c2dc3e9452fa0cfe662b7c72b354dc63accd606d0d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "2bf24dc5c148470586a18fea76c337a3324789796e87570dd9799db57004636b"
     end
   end
 
