@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.34-alpha.1"
+  version "0.9.0-quest-dev-20260319214113"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "7b2505232c83e5b21b2daeae7c6d26f7681f3677a677464ccd0ce714723fc7e2"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "b8d5e6677dc657a72ba8e55415e4c87fc24f28993cbc3e55688224d09f65dcbd"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "d9e146e8440699e145b850234389e2f746849d9a6678a4ade1dab066106dedf8"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "d27009fd45fd22bdf1cc451f362f9104bd721916583e6c487d9ac7bd7c597a1f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "9f58c9c855b3f6008f4b72ed1d4d12ad725ce0f992ab0036e9f0cc2ba58ed544"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "49813a5bf5a56de5502f03d9aa9fdb2d3c9f88f6732e6f495dc360b5e2a22afe"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "bcc48b04ea201b9eb2377ed53586dbf93e80df0ede7dec0ae4f539c23b97c980"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "32e0bfb7bda8a6114a71369ec4fbe6051f056545d1c18fffe55a0b70cfde3718"
     end
   end
 
