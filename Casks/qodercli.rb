@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.35-alpha.2"
+  version "0.9.0-quest-change-77-mcp-dynamic-unload"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "e4f095f50ad07e91370f73c39f55d852762dfa4f829c32409f6a4b18302ea6c0"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "fed5b0d20c1bbc9249aec69f9ac04b6ca5641645bab6963be047af3227c045b2"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "18cba8f93023619d6a084a78c7eee42a2b4f731fffe5d5ae33925b77924c1cfa"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "e79803822ff76e905279ede1b868cc304ddbcb795a74c8fbbd9bcf8f967ff27d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "1fd981e39ebd00282b4b34db36aace2c77d637a63460e998a102cfaf59b39231"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "da62399bdb83a468a0f33dd3126fe4148fba87a2ead941b00ebfeaf0b167b0ca"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "3fe16d7ee9c7c1a9bd1a46935953513a9d56b8944e716745443760b09a82d38d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "39184c7717650c0d3577a7e0e7bb67287d49fbe458b471692ce192634f61c413"
     end
   end
 
