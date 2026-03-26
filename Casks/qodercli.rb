@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.36-alpha.6"
+  version "0.11.0-quest-change-109-search-agent-optimization"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "bdd4861b35cea28d2b98e0411dcb2d38bb9910a9d13c53fe32f9373b2706703d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "32b3bad86d5c645730a4ab52e1aa5c2b1305e039919e1a355fb3e38f38e2485d"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "588883cfd7e024312b791177cc8b729532b6cb9d57196604e09fd747cc2ebe50"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "544a30b3893d958f9623cd088b624b7c630da5a72b727bc59ab3ab0727a3ea64"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "ccd318722ca1f12fd705e4ba2a91c755d28a03aaa59c8763a52b3b65670ac67d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "b520bae52f8681b62ef0feeaed50e9cc412d31aa637dc8b8b7dfdfa5910aa224"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "53fd6cee02a8e2413c9d175ef028f372f088630dd6eacbb5cad2036115be232d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "0e0167183865326c1389d6639b2da76226a820ea90830be99885e58a1990a1e1"
     end
   end
 
