@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.12.0-quest-change-125-quest-worktree-commit"
+  version "0.1.37-alpha.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "9bb2a66d0fb596fc85c22d64ab9bd82aa2443998c7465a5a832e464078d54cdf"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "90777c1f6fe0d633c0ae0b087558b00d04bb70b7d9a842cec0254e5b4a924262"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "44de9946025736a2cde13898fa39110bdde296f7a2f6b2b550f64e9911500ca2"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "29d879ccdeac181a1958e903305bf3e9d01f382508b98c858944c26080108370"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "40568eb38d6abf977b2a92e62719ae3618057ded8ccbdadf8173c66cacd2a45c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "7fbb077b3f9a5afc9746148146f59b30b54956b0a3b2f5ec55ff445ac7b82d2e"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "be69c3ee676a7f33e0b7dec7346c95f62bc5b729e5c833776051832e60be0579"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "0b3da80cb4e00ee4ece9dc6dc030aaa7613c19d36847d2551b81e2190e4f7b51"
     end
   end
 
