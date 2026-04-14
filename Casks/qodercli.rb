@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.43-alpha.2"
+  version "0.14.0-quest-change-replace-haiku-model"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "71145ba161607d4ae2e3935f8857a2e55e7d9e2976270a4320fbf0c27db1fcfd"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "a0640b75cd17b144d37c98f958e5ad893df12cb4983173648d6ae742e7ab6ae0"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "1f0fec5de8dc399353b7720f65636666d06d1fb3e9da3b85607b466c9157f21b"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "3bfaf1dab180185ef9e9f03a404e0591e9937174381a7d5747f1be5306205227"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "43e2b4cfcbd3f67a5ec54adc7915c9ffc9c8e08d6eaed3c7eca005c3726f32e8"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "fd5326bc6fa0cd0bc4bd09052f26e547a7f763c6f9325594d23b09695f43a210"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "8e5ce74e4ef38505375a174d0b428556e7604f5aa74b89629fc317a8fe20595a"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "a81dbbd4706de6b34e5c4600f916b73f25b0435e8cfa041b9d5ba4d5c7ae8efd"
     end
   end
 
