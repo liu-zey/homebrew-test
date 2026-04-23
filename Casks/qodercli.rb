@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.15.0-quest-change-add-user-traceable"
+  version "0.1.48-alpha.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "9d60de45f9a5f669bb77592deb86fd3f285420facbadc05e647c4be3560869a0"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "eaf035dfc1ddff84f94e02d42a4e80e42b0e0dd4990966885abaa4c8364372ce"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "42b58fc1755f7580972b1678df1d61af11b5760ac4ecc4e90d7cd79854bff25d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "407c5d0b9c3ebcd3064bc6a9bdb6a83e1735a7550cd7c0393b89adbee75c2d10"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "52f9876200dfdea8c3ee0e2947a4ac033f5fd762f4883645722c56ce38cd55b1"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "15a067bc95f6f0f847b249e5645bce3894fbf09aefed6b4f84afcc54c87ee3c6"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "4faddd023f710b177ed5588d3f56f0a4ee9867916395acff937a34bdae6b1c52"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/qodercli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "a4f61a6e4a0f2cfc3cb81013b916a442be42d50cc1f2857b1ec2eda2b3b73e24"
     end
   end
 
