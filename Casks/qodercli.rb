@@ -65,26 +65,26 @@ cask "qodercli" do
     end
   end
 
-  version "0.16.0-quest-change-acp-connection-recovery"
+  version "0.16.0-quest"
 
   on_macos do
     on_intel do
-      sha256 "9d14a78302c4c69616a01f689346081dd14f7385ad2a6bbba55f085c266521f2"
+      sha256 "24662a47601c139c074033cf753a22e871dc993b76b44a7055e652b42dd8d4ff"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
     end
     on_arm do
-      sha256 "5fc1cd71652a3d1d4b28fa5fc159880e375587ee5c2a217ee0f1dfc1b222c562"
+      sha256 "0642be769ed011ce904893f031151aaf88db78e2a3f5ec7a327307121139cf24"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "eb60f96d1765879ed49100643616dad33bc39b17cc8b8a584cb04e70ed73b89e"
+      sha256 "1f2d685df7c0b91d70f0330a2faddcaf9d80cf9dbfddfee50b126aa8585a7a3c"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "f78103abea321d96d7569a4b07b87829e423a3d272d5c0bf01b94ae6afb7c83a"
+      sha256 "1ed52c50848d920314d440dd81fb494d683a4db1d920f605907d0a566ea243fb"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
     end
   end
