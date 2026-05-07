@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.18.0-quest-change-sglang-sleep-mechanism"
+  version "1.0.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -79,22 +79,22 @@ cask "qodercli" do
   on_macos do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "0d7e3aeae213aa67627e2cf45ce7c3a093c76e374537a9638aa41a4d7b4a0108"
+      sha256 "6a9d5182c66e05c378b0e2aa35a0ca035f849cba889bc97c4dc1b9db8c15ce59"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "fc47e1545d746634413c2d6fbd863bbe6d7d4cdd602d4499c46fac7a84d5a4d8"
+      sha256 "5f2002cfa1b41839ce03775b8d7b6277431240335a3ca28f31b45f28c151c93b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "d56d1587c1a85cd43bf60b8a99e2339a06e5a62a5f0e44796c4e280bcdfe781b"
+      sha256 "87aebd0e72bd6ad81c1c76b2dfdcb8be47fa0e26471e49f5a770551b0e5a008f"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "303c87be40308fa1755f5a2e34c833bd84fad0112702721a64cd95d092507999"
+      sha256 "a41388113ad0cd2460ee8267cc580ece586125cca1ac2b7a47a139fdf4af9753"
     end
   end
 
