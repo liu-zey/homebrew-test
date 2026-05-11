@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.18.0-quest-dev-20260511175840"
+  version "0.2.0-cn.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "d9f1e1c41decf6daf35851d2331a7612d629f75894a24755e54898afd15e2435"
+      url "https://static.qoder.com.cn/qoder-cli-cn/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "4ea9d24c3517e0ba20c227ecdf183fe7e2a9f136539c04185539f360b513672e"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "dca2df46fdb753877a748856f264833b470ae5e4e194f8c2926369568a571331"
+      url "https://static.qoder.com.cn/qoder-cli-cn/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "11c6728ca9de5ab10202afbc24beb3f9eb04fb9b4c1d38a928a62dd9f7842eb3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "ae491879e8b04a782a7954f782e54ec2e6f82b9ab53114fd52eaf4d962c2dc89"
+      url "https://static.qoder.com.cn/qoder-cli-cn/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "4a0dc85616ac873eb99f3582e709564534f68d0f952cbc7434787c0c1841be49"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "981bf32caa4e895e191aae6d13e6e5e7a3182a135b36e20547c87d46fe3a6463"
+      url "https://static.qoder.com.cn/qoder-cli-cn/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "23646dd1b39f1245f90952cefe66663584ff328a85d1d15bb94bd962680c8723"
     end
   end
 
