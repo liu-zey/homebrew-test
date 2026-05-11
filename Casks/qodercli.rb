@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.52-qw"
+  version "1.0.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "d62195d339aa0ecd8d64b6b6f643fd18ad16fa555ad3c35e79cd6ee70e9340f0"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "3bd85e00ea7dad742c73ba53827f92f787e3d5befbb0d995ad713d9694b03292"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "2b4ea63fb8bc556a6c78fc86c5c72ef3da49803c2dcbceefddbeb61ef5cd7d94"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "dd80e407461191f5646e0eac82770b73fbea36f0aadb0791861b1b276d52e26b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "26f2021bb7eb32386484fc80993b3422b3b801afb4e9fdd2b5d35de3464e587c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "4b46bf61e72fbe420039f59a97884ac31d227b6d13379154493a18093abef0ca"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "51ebf01e6bd3eea87fec8d15cb2acc7d272b92cb879081e8ec125f9bd69f162b"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "9b4561abbf8b2b368bcea89b4d27a63ec683e12f91d85b5ecb1aac405bd7d3d9"
     end
   end
 
