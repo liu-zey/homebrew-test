@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.53-qwtest4"
+  version "1.1.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "f93a989dccd81dae98a0ab7ebf83754b757df25d711aec0f270dd91a149bd137"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "f2fe5655f203565c0b5b0c87a4b3608f6f478d4e888df82e220df173774c52b8"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "6545de21e951b33f642069344ea0457756318aed7369e04dce7ad491ff7890c8"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "8eb4b178b6158126ef608ca0042477388bbb8b2184d4ba73c92719f9d54ce840"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "2821439cebf819513e59a5b3e354ed11a6619f3da08af633e2aa68f70dfe52aa"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "695d77a45e1c902250204aee1a156eea5eb76d1cc2802a1452f823b86cf65d4e"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "fce20ebb0198e5a3a781c6f6c715ba2b515374fb29a3416a2a20b7dcc9926982"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "f1b825d4a2ce8d7c87c695b629c420c1484f3b3b01361f392e198e3555244704"
     end
   end
 
