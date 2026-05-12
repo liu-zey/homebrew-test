@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.0.0-quest"
+  version "0.1.52-qw"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "49b8bdd61fe7d2058a43188df8b702ac0bf88ae65723afabba5d348b8b93d211"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "0a6887743d01efdab94004e297d4779a48e7976d10fc0d449cbc96447c09039e"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "4693313b7470933abad121d080770108d17598985dc7c9561975985f54e77f69"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "bfa7091fb07aaab5e4e360c1bbeeab8d3c475272bcd76b0e24a977180c4b1aef"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "67113a24ef314c839cbe9fd524f58e31e5e782a9f12c29aea5a8d205a258965e"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "b090b9758ee345d6e3bd8691b75593c3e37700ca978df8021677e8e11c93723b"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "37db880a5cf7f2ed1785cf7f0a2b77e4bf68d5272fd23e9e9ee328a630f98599"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "9ecce7ab3e2db57870c62838b5dd465c5f549d60f52de1368806acb2e43af110"
     end
   end
 
