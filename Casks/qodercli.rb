@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.52-qw"
+  version "0.19.0-quest-dev-20260512114040"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "0a6887743d01efdab94004e297d4779a48e7976d10fc0d449cbc96447c09039e"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "0cd4f1d265879a1fb1b2ddaa90740c44788325b020b1b8c3836778fca98636fd"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "bfa7091fb07aaab5e4e360c1bbeeab8d3c475272bcd76b0e24a977180c4b1aef"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "13b695a8aad2cc951474aaefbd24a19eee56f879c008760ff8b36c3656a8784d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "b090b9758ee345d6e3bd8691b75593c3e37700ca978df8021677e8e11c93723b"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "fc2dbe59299a7debdb9a3cb104c8793c46e388ef7af47cc50a702bcd99c841ce"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "9ecce7ab3e2db57870c62838b5dd465c5f549d60f52de1368806acb2e43af110"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "faaebc5da89659818923e2aac832b12787eb4468af17b1f92b89d01e45ced48e"
     end
   end
 
