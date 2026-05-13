@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.19.0-quest"
+  version "0.1.52-qw-bate"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "d56c8ab403a58595d94561832a2630e57d7424d79eb930efa15a11b8ec5fc1d0"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "51ae97cc233b1f75283b13300e498c25e78a6ed34926dad6832e2c42bfadf9a7"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "dbafd5cc8bef492d68d522d7776ee86ad0359bef76c11714c843697c103dc90b"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "1d9de6023302e5d30a559b8610284dc165532c38dbcd1d36a9c12bc113932bfd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "d937736fdd3b9e94e8945524953d08afef7e23880e5aff6560061f351911db9d"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "9944e71b16b6e6d4e95e1a721ad87d9693b2f92a67ce2f80efe56304a41664f2"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "cca34a7abe27769a4c0e478fb83da3d24cd88044e11a1e42261856ad3a4b79c1"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "b2e69455918d4fadfe7542d755228d6707ec32b2b58e77795bac957729ccad3c"
     end
   end
 
