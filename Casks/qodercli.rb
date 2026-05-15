@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.0.1-quest"
+  version "1.1.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -79,22 +79,22 @@ cask "qodercli" do
   on_macos do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "6168a8d55cc62ca64da59544d336944e2af1215c0a034c6f9e419087996f21a1"
+      sha256 "ae349196072475a9aa21a274008e25fb5caf95a2d6cda1b2ea83bd7902e88262"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "83c267df06e87b8ccaa8ecfae6d4206c3dcbdea4cf67928e2341d80f9858a1ba"
+      sha256 "a3407e7477ecc3a7160955e08d2ad91c41767cff311866a5034deff88c30541d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "b5cb58862704a40c2ff32394bb6f1bbc52e5320281b204c1f50a3fdb128d750f"
+      sha256 "d3832863c59755a9c6652b6cb245489ce682d8466af3bba8e7b4fa2a51907724"
     end
     on_arm do
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "c715594b7fc3dd6028e9e238e538ba7a917fd273edf283887713596fb3d4dea5"
+      sha256 "5d641ae3f61a5497e3752e08df29b5b0a44fbdfdc83503336eb5e44082e99f99"
     end
   end
 
