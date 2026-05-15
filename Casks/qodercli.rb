@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.55-qw"
+  version "0.19.0-quest-dev-20260513133809"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "a06021137950b52785156263e508613b07e8107e1833032d1e67966b1269f0dd"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "a680bd6610cf119ff3667546ddd31d2d168e98bbdf974ab294f503ae269b977e"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "f5c3bf2f268a0ffab7958e1dea48f7d83df1d4181d5f5802aeb8f0a8eda8f169"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "53791c818ef54c6b3eddab52d4f7584605b8ece337cdbe797522b2f9a05f666b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "3bd31ed05ec991d9f714048dfb3dbc0f09dce1c06112aa3dc990f10824ff2903"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "6c05839d239e2e9daca5102c62c459c46c3f3a917e77f70bc169d58e6b539e47"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "0e0cb02c193cfddc8c9dd97c52950b8fa134530deedaab5a6e85d35d1ced3f6b"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "a1faf717a1ab2fa7f2d4f5e21a06e9c146f75ccb4331d24ae5ea5a39e009a670"
     end
   end
 
