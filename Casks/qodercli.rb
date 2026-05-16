@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.1.0-quest"
+  version "0.1.56-qw"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "279eaf9a57cc96a7796b147802475643fdcdb7125e6e39c8bbfdbfcb16e35869"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "9bdfe631b540e6258b1aea46e54e4e0048a6590887f2af15a5e5e517856fa5da"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "e2550158bfd7264cb0f15fae38601ab5db8ed7a997081d9084fcd6b585bb2673"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "63ac4acd23dcdbcdbd2d94e1da0c2364b792bb0ea92ce16587db228d583042c7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "683b54b294a90c9e8745082a0cd4275739c0155416e9cee28c90f6428ef8ac5e"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "0c84e98bb0ff260b577989e8c5ea5a7e54ee2e28d2cb750a2dd987a44b265660"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "5ac5d744d8691e80551972447dcba10eeeec25a2a4dc5f54e66abb00df216dab"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "ed21640c3cefc75dde4d60af9b88dca9bbe3340dbd0e848e3890cee7cb1fcd65"
     end
   end
 
