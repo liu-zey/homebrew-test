@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.1.0-quest"
+  version "0.1.55-qw"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "57570aafc3833cb7e27af40a9c5df4593d940ac889ea3168259b10e46db86b51"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "13da91924a5f3191f40bc593d892b282aa120156084a098e4d17b8c174eb7d6c"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "112fe59de724676c0dd7f8d1a2ef21f97436f2402def6751b1d1ffb59745cc72"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "22a1d477afa64fe6ac31d4ad1de9189e23318516bfb56faa5e3bf068b04685c9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "8586aed233e5da194d3d1185b55b36344ce5590ef1eca5cce4d0ff617baeeb0f"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "2fd123571e623cd5e9c4a91e00c2c0ffb187ab85925ade1ab56a09e7da69bf3a"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "2764d03cdc31a9e67054ebede1f08a9a97ecf8ca08e83391800998f720b23f66"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "31a654fcc38636dcdb1b631bfdb2f2df4e3cc331506e89a89d0ae49bb76f7407"
     end
   end
 
