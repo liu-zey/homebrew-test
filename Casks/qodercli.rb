@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.55-qw"
+  version "1.1.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "13da91924a5f3191f40bc593d892b282aa120156084a098e4d17b8c174eb7d6c"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "97413d8fedc00d517b95c1a2f1223db0490765f1e249a0167c13d1d4b72f0fa2"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "22a1d477afa64fe6ac31d4ad1de9189e23318516bfb56faa5e3bf068b04685c9"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "d90cdc68ce5a75136c9fc5c87d194ab06771af14985e0b922b177dd45b94c211"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "2fd123571e623cd5e9c4a91e00c2c0ffb187ab85925ade1ab56a09e7da69bf3a"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "3f391580f75c1e01bbb9b6d56d3a323c7b604a5379f7ee12355546d9af4fae3c"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "31a654fcc38636dcdb1b631bfdb2f2df4e3cc331506e89a89d0ae49bb76f7407"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "2c8185ba6695778685a8d666e40e99fa2a894b39068c1ff85f71050ac9a4e256"
     end
   end
 
