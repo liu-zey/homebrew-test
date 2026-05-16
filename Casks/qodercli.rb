@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.55-qw"
+  version "1.1.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "5a6278ec55163d98eb935886db52d6251111ceb2bf13262937d99bb52c14b6d0"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "f205acda2f38c711e98ea86bcb50f4389933c030aa7c83aef3dc3bad6284ed05"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "8ac0558a2666e42fc974ae61693ac7fb13278bd10b2c9c3d2999701d6394cb1a"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "2ab2f09013a27ab03fc12fa22dfdd6d60e3596f748f2046bffd13e936033c4c1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "58feef62652c134d5ab66fa5575cdc2614f7f812fd6ce51ac7952870657b4c69"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "abcd8c3f4dd96675a4f5b3ff2255c666f5f5061e45e1f0c1542cc5aad1bc5e79"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "a8cbbc7869531c809e6c021200a35123c214a00f1ab17aefd973916f00d21daf"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "350b1231731830ab44c6423d3caebb7f4fe65ac9578a57d0d9548af28d5ca6c2"
     end
   end
 
