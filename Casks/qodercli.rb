@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.57-qw"
+  version "1.1.1-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "4b3deecea6531cbd0aa09f0bc013694e28cf3f7e4a24956058b35df46886fae3"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "e3acdc890eba2494a5b123bdbeef19a0a4ad8027ecb3aa9c0ff9571fd3a053b7"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "cdd5bcf0c7b9fc594408cbc63a285b8d155b878c6c56df4df5ebccc650dcf81d"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "22034435ef56517dca5cb3c4e2d657661367c843c2a760082ab9ef95c72ba185"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "9e6ba35b21483c1306c90f2a9a33a6b82f53d725414e2cf5a1da499c3b2f8ba2"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "29ca6c9f1f805fe37f2176825b749b2eed1e83e6f9be86e51fd5da29d4b29867"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "c03e8b3a4b9aa553dbe399ee05fe60c43804bb85264f0759801c343e8f95bea5"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "ce61cc25e331f4c101cbd762e2562d993ffbe680d35b3bc5b91bb293f7a467f8"
     end
   end
 
