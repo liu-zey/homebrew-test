@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.59-qw"
+  version "1.2.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "122cbfe426513f4e2b37dd2bcb0c2ef2c290265b7b7360b5b37903212facfe4b"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "835443b348083d14614e0931dbad9eb329d366524f09c167e5053ea4e9196db2"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "6e127cf3b7c58b7e8d47719ed5fa4f12e685105b8549886d6de20874a41714d4"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "1ee5ef10170b2aa9f99cf50c2515f20f40f245a9df236d45f106512faccf1b30"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "4956c7ed8d5a0de35ff8b3c467bfb89658041e0eb666c86b5311003eaed67872"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "e75e81e2a8704de57b6d5fa57d91bd2d48c5b4576a34eedc46f5f848b677816b"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "e1080b08ff2909bceafc48a98f3884522c88ffb9dd947266729343db962e453e"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "62d005a2b4b76e7758a8f3a45bc37a3d40635e8c532427bd4ab07854cb336a38"
     end
   end
 
