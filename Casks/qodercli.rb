@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "0.1.59-qw"
+  version "1.2.0-quest"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "3ad9f3aeeb494fe5d79be68a26d9dd688fa5dd7cadb0fb51b61ffef78f74cd79"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "f4cf434cb381d907ecfef1b5fbad663f11026354a8622565b95461c2ab975230"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "0e6b6f4a5520e3e6e31d197711b1656acfda6733c71801ae0d578abe0b6b3117"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "0e32e94350f60269a54e77765bc385db6be411f6a52b0a472e1dbdbb2279abd2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "c7ca2fc42d2d306efcc100ecca33bf516b7d76dac8e92fffc3e72f5cea33a527"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "2e2d745370677f58e50e6dfedd04b5dd61d3516df8cf73cfd69faaca5899c391"
     end
     on_arm do
-      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "4c4cb1129a9f9b58926ba87a694a836fae018f737a9750a40f78d5a8b6c693b2"
+      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "fcacd6811f59a8aa5d1186c4ad6059773a8a35899955326319ffe3ad0485ddac"
     end
   end
 
