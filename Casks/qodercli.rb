@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.3.1-quest"
+  version "0.1.60-qw-alpha.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "cdcbcb7a1982e1037ec05876a2b755a6b2d7f2e00fd3fcd813e95273813a4830"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "70960a9225c5c1f26817b1fa4a00e1192585cc7abed4b1c6c193e390023ccec2"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "1493854952338f5171130c9de1268765e8481c04479c709abd0ce5986e6f73bd"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "64348e048383f55478a5f6e87db4d9b195c84b937d18c133feacfd72e5a2ead7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "09eebea789223fa510356765a3622cfddf29139edf9b69f024997cd432c21160"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "e92ea1015307bde45684ed1a96ae7ab5403d42dcf7e2593258296074fb88b4f5"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "9e1e1f01470f4cbafde284a21ca8968a656f8caf6ddbb1e8dfa36b61bb04bc7d"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "7d2777301c767f50a68319729508a87cc3b01d1032aa6b1666908a0c7ce983cb"
     end
   end
 
