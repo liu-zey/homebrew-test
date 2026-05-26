@@ -68,7 +68,7 @@ cask "qodercli" do
   name "qodercli"
   desc "Qoder AI CLI tool - Terminal-based AI assistant for code development"
   homepage "https://qoder.com"
-  version "1.4.1-quest"
+  version "0.1.60-qw"
 
   livecheck do
     skip "Auto-generated on release."
@@ -78,23 +78,23 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
-      sha256 "3e05cca85325163d4bc386e4b61791b92a3d8e71a2463fdebfbb58b44e3b369e"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
+      sha256 "08341a03dff0225d15663a9ac5a694c54a8f345623eb3a122a58ecd0be2fa1a8"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
-      sha256 "c857b4160c383862bce34206fc3cff27b8bbb58535ba8d238bd7936db0ae150b"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
+      sha256 "a580c2cf20553448950ddecf136eb6f0458d7b9d53290903f2ac1b960b809a9c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
-      sha256 "c26dd073bc8acbd9ae52b373d59403f755bd4330801e03f22aa0a048cf6fde19"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
+      sha256 "3e1175e287351e6114985d49fe86a0ad2391690e1b7bdfc74849ec8f3bc0304d"
     end
     on_arm do
-      url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
-      sha256 "5c5e249bfd50bdcfd459cedb78ffc2c42b6fb5ef1c0a4a4f08e1f6a078eda143"
+      url "https://static.qoder.com.cn/qoder-work-cn/cli/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
+      sha256 "5879c5288699b8d35d7d78ceda6b97f45e66fb44ba201bd4c53a95b51bea692f"
     end
   end
 
