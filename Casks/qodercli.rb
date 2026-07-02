@@ -69,22 +69,22 @@ cask "qodercli" do
 
   on_macos do
     on_intel do
-      sha256 "450b3e67c478fe7cff973486f49ee9b8c7d3fea3266ed5c0f51079dd082945d4"
+      sha256 "0cf072b7c39fef5f5f0a45381869ee86fe12de95598bded87d521c55a325035a"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
     end
     on_arm do
-      sha256 "f674c77a5951a9f63d382ff89cdc3d4058dcc66121a2e7608a0b9e19f648e371"
+      sha256 "ce54fa50fd13cb8700897f73fc2dca68c8821c403b5d17e2be404fb2f8191ef4"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "0f28912e1e3c240b6aa6308d0d5089c243da424eaebccee36a1af9451223e342"
+      sha256 "be0c7e4b6da3fd3ec3a0913e5e01fa9a0cd8e19c53c08c2182dddc3be9f6d88b"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "30ac0a9bb7bf363afde2905e4a70b43408a0920332dbfa375f74d45c0fd40484"
+      sha256 "1122f4acffcb9b09c6b5c60534f97d8e6d1736cef21fc3b6c86b31bc9259f2df"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
     end
   end
