@@ -65,26 +65,26 @@ cask "qodercli" do
     end
   end
 
-  version "1.15.0-quest"
+  version "1.15.0-quest-change-schedule-task-v2"
 
   on_macos do
     on_intel do
-      sha256 "6e8df5f2f5ec93889cc827e4310b808fae270d7d65d8a0fea2bd6dcdfe662a22"
+      sha256 "3058a64aa1f6edc8e06dbb79e4a40e961ec0813d3c3c7ba9260ccee8c44b9570"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_amd64.zip"
     end
     on_arm do
-      sha256 "ee725cfb38af0ece18ef0f896506c3895155ef396f42e29b12cfcd5f41b58d8c"
+      sha256 "818eb6e2fc1cb5197a79696e712d8b1071196cb0b0b266848d00a1de40c26a7b"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_darwin_arm64.zip"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "2da7da435f76552f4615419ddbfdc89762e986331c8f8aad4d1c3e44d2fa6c5b"
+      sha256 "8e931c8a54e82c1b1270ab4e4f40e3ebc21950c58315a7ffd3cd3ec01c955aa8"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "6708df053b864b4c228f786ffe44f0b512236e20c2957ec626eaf7c54a4fd578"
+      sha256 "80f35765cd63d2958affefb5992137563b8c31116e42d483eeeb6eab9e5cce9d"
       url "https://qs-cli-dev.oss-cn-hangzhou.aliyuncs.com/quest/releases/#{version}/qodercli_#{version}_linux_arm64.tar.gz"
     end
   end
